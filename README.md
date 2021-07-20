@@ -1,0 +1,2 @@
+# diary application using django
+ 
