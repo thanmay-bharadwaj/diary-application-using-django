@@ -26,13 +26,13 @@ def signup(request):
         # to create a user
         if request.POST['password'] == request.POST['passwordagain']:
             # both the passwords matched
-            # now check if a previous user exists
+            # check if a previous user exists
             try:
                 user = User.objects.get(username=request.POST['username'])
                 return render(request, 'register.html', {'error': "Username Has Already Been Taken"})
             except User.DoesNotExist:
                 user = User.objects.create_user(username= request.POST['username'],password= request.POST['password'])
-                # this line cal login the user right no
+              
                 auth.login(request, user)
                 return redirect(home)
         else:
