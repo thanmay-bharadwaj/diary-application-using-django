@@ -8,3 +8,7 @@ git@github.com:thanmay-bharadwaj/diary-application-using-django.git
 cd Diary
 pip install -r requirements.txt
 ~~~
+## to run server
+~~~
+python manage.py runserver
+~~~
