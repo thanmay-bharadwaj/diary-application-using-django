@@ -7,6 +7,8 @@ This is a personal diary web application created using django framework for back
 git clone https://github.com/thanmay-bharadwaj/diary-application-using-django
 cd Diary
 pip install -r requirements.txt
+python manage.py makemigrations
+python manage.py migrate
 ~~~
 ## to run server
 ~~~
